@@ -173,20 +173,20 @@ write.csv(
   quote = FALSE
 )
 
-ind.L.min <- plyr::ddply(
-  rad.sub.SC2,
-  'IndividualID',
-  function(x){
-    apply(x[,2:3],2,min)
-  }
-)
-
-write.csv(
-  ind.L.min,
-  file = './TEAM_IGIB_prediction_MIN.csv',
-  row.names = FALSE,
-  quote = FALSE
-)
+# ind.L.min <- plyr::ddply(
+#   rad.sub.SC2,
+#   'IndividualID',
+#   function(x){
+#     apply(x[,2:3],2,min)
+#   }
+# )
+# 
+# write.csv(
+#   ind.L.min,
+#   file = './TEAM_IGIB_prediction_MIN.csv',
+#   row.names = FALSE,
+#   quote = FALSE
+# )
 sink('TEAM_IGIB_info.txt')
 sessionInfo()
 sink()
