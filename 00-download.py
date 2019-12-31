@@ -8,8 +8,8 @@ syn = synapseclient.login(
 ) 
 files = synapseutils.syncFromSynapse(
   syn, entity = 'syn18507661', path = './data/'
-  )
+)
   
 files = synapseutils.syncFromSynapse(
   syn, entity = 'syn20632048', path = './data/'
-  )
+)
